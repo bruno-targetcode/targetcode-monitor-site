@@ -1,0 +1,16 @@
+# Cloudflare Pages: cabeçalhos de segurança e cache (o GitHub Pages ignora este arquivo).
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'self' https://api.web3forms.com; frame-ancestors 'none'
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/screenshots/*
+  X-Robots-Tag: noindex
+
+/thanks.html
+  X-Robots-Tag: noindex
